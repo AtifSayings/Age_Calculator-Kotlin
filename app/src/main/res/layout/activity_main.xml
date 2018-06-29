@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ageEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:singleLine="true"
+        android:minWidth="200dp"
+        android:inputType="number"
+        android:background="@drawable/editextstyle"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/calculateAgeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minWidth="200dp"
+        android:text="Calculate"
+        style="@style/Base.Widget.AppCompat.Button.Colored"/>
+    <TextView
+        android:id="@+id/myAgeTv"
+        android:text="Age:"
+        android:minWidth="200dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+</LinearLayout>
