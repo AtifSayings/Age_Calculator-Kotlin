@@ -12,12 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //handle button click
+        //handle button clicks
         calculateAgeBtn.setOnClickListener {
             //get age from EditText
             val userDOB = ageEt.text.toString().trim() //.trim() removes space from start and end of text
             //get current year
             val year:Int = Calendar.getInstance().get(Calendar.YEAR)
+
             //validate
             if (userDOB == ""){ //if no value is entered
                 Toast.makeText(this, "Please enter year", Toast.LENGTH_SHORT).show()
